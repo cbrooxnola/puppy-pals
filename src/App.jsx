@@ -6,12 +6,16 @@ function App() {
   //console.log(puppies);
   //console.log('hello');
   const [featPupId, setFeatPupId] = useState(null)
+  console.log('hellloooo');
+  function handleClick () {
+    ()=>{console.log("puppy id: ", puppy.id)}
+  }
 
   return (
     <div className="App">
       {
         puppies.map((puppy) => {
-             return <p onClick={() => {}} key={puppy.id}>{puppy.name}</p>;
+             return <p onClick={handleClick} key={puppy.id}>{puppy.name}</p>;
            })
        }
     </div>
